@@ -3,6 +3,11 @@
 *.a
 *.so
 
+# Editor temporary files
+*~
+\#*
+.\#*
+
 # Folders
 _obj
 _test
@@ -20,3 +25,8 @@ _cgo_export.*
 _testmain.go
 
 *.exe
+
+# Droplet
+droplet
+droplet.conf
+*.db
