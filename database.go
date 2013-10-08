@@ -21,9 +21,13 @@ id INT PRIMARY KEY,
 title VARCHAR(255) NOT NULL,
 desc VARCHAR(255) NOT NULL,
 price DECIMAL(19,4) NOT NULL,
-date INT NOT NULL);`)
+date DATETIME NOT NULL);`)
 
+	if err != nil {
+		reutrn
+	}
+	
 	// We don't have to check if err != nil because we'd just be
-	// returning it anyways and we only have one table.
+	// returning it anyways since it's at the end of the tables.
 	return
 }
